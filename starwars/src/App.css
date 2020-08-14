@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Londrina+Solid&display=swap');
+
 .App {
   text-align: center;
 }
+
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  font-family: "Londrina Solid";
+  font-size: 4.0em;
+  margin-top: 100px;
 }
-/* write your parent styles in here for your App.js */
