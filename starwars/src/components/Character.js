@@ -5,6 +5,7 @@ import styled from "styled-components";
 const CharactersContainer = styled.div `
     display: inline-grid;
     margin: 20px 20px;
+    padding-top: 30px;
     
     img {
         width: 150px;
@@ -26,6 +27,10 @@ color: black;
 font-family: "Inconsolata";
 border-radius: 10px;
 box-shadow: 5px 10px  10px black;
+
+    p {
+        font-size: 1.3em;
+    }
 `
 
 const Character = props => {

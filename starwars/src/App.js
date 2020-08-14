@@ -15,7 +15,7 @@ const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
   const [characterCards, setCharacterCards] = useState(null)
-  const [currentCharacter, setCurrentCharacter] = useState(null)
+
 
   useEffect(() => {
    axios.get("https://rickandmortyapi.com/api/character/1,2,3,4,5,6,7,8,9,10")
