@@ -1,17 +1,31 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import styled from "styled-components";
 // Write your Character component here
 
-const CharacterDiv = styled.div `
-    display: flex;
-    width: 300px;
-    flex-direction: column;
+const CharactersContainer = styled.div `
+    display: inline-grid;
+    margin: 20px 20px;
+    
     img {
-        width: 200px;
+        width: 150px;
         height: auto;
+        align-self: center;
+        padding: 30px;
     }
 
+`
+
+const CharacterDiv = styled.div `
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+width: 300px;
+height: 500px;
+background: white;
+color: black;
+font-family: "Inconsolata";
+border-radius: 10px;
+box-shadow: 5px 10px  10px black;
 `
 
 const Character = props => {
@@ -20,15 +34,15 @@ const Character = props => {
     console.log("info", info)
 
     return (
-        <CharacterDiv>
-            <div>
+        <CharactersContainer>
+            <CharacterDiv>
             <img src={info.image} alt="character"/>
             <h2>Name: {info.name}</h2>
-            <h4>Species: {info.species}</h4>
-            <h4>Status: {info.status}</h4>
-            <h4>Last known location: {info.location.name}</h4>
-            </div>
-        </CharacterDiv>
+            <p>Species: {info.species}</p>
+            <p>Status: {info.status}</p>
+            <p>Last known location: {info.location.name}</p>
+            </CharacterDiv>
+        </CharactersContainer>
     )
 
 
