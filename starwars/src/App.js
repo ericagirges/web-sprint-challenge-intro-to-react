@@ -2,14 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import Character from "./components/Character"
 import axios from "axios";
-import styled from "styled-components";
 
 
-const headerStyle = styled.h1 `
-    font-family: "Londrina Solid";
-    font-size: 3.0em;
-
- `
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -37,7 +31,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <headerStyle className="Header">Rick and Morty Characters</headerStyle>
+      <h1 className="Header">Rick and Morty Characters</h1>
       <ul> 
         {
         !characterCards ? null : characterCards.map(char => {
